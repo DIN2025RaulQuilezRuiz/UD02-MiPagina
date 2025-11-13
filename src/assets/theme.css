@@ -1,0 +1,167 @@
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+    --color-grey-3: rgba(130, 130, 130, 1);
+    --color-grey-4: rgba(189, 189, 189, 1);
+    --color-grey-5: rgba(224, 224, 224, 1);
+    --color-primary: rgba(50, 30, 87, 1);
+    --error: rgba(235, 87, 87, 1);
+    --info: rgba(47, 128, 237, 1);
+    --primary: rgba(50, 30, 103, 1);
+    --secondary: rgba(194, 194, 194, 1);
+    --success: rgba(39, 174, 96, 1);
+    --warning: rgba(226, 185, 59, 1);
+  
+    --heading-1-font-family: "Kantumruy", Helvetica;
+    --heading-1-font-size: 56px;
+    --heading-1-font-style: normal;
+    --heading-1-font-weight: 700;
+    --heading-1-letter-spacing: 0px;
+    --heading-1-line-height: 61.6px;
+  
+    --heading-2-font-family: "Khmer", Helvetica;
+    --heading-2-font-size: 48px;
+    --heading-2-font-style: normal;
+    --heading-2-font-weight: 400;
+    --heading-2-letter-spacing: 0px;
+    --heading-2-line-height: 52.8px;
+  
+    --heading-h1-font-family: "Kantumruy", Helvetica;
+    --heading-h1-font-size: 56px;
+    --heading-h1-font-style: normal;
+    --heading-h1-font-weight: 700;
+    --heading-h1-letter-spacing: 0px;
+    --heading-h1-line-height: 61.6px;
+  
+    --text-normal-font-family: "Inter", Helvetica;
+    --text-normal-font-size: 16px;
+    --text-normal-font-style: normal;
+    --text-normal-font-weight: 400;
+    --text-normal-letter-spacing: 0px;
+    --text-normal-line-height: 22.4px;
+  
+    --texto-grande-web-font-family: "Lato", Helvetica;
+    --texto-grande-web-font-size: 32px;
+    --texto-grande-web-font-style: normal;
+    --texto-grande-web-font-weight: 700;
+    --texto-grande-web-line-height: 44px;
+  
+    --texto-peque-o-web-font-family: "Lato", Helvetica;
+    --texto-peque-o-web-font-size: 20px;
+    --texto-peque-o-web-font-style: normal;
+    --texto-peque-o-web-font-weight: 500;
+    --texto-peque-o-web-line-height: 30px;
+  }
+  
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}

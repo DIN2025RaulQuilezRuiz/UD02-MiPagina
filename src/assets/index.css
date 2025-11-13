@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+ .contenedor__h1 {
+  font-size: var(--heading-1-font-size);
+  font-style: var(--heading-1-font-style);
+  font-weight: var(--heading-1-font-weight);
+  letter-spacing: var(--heading-1-letter-spacing);
+  line-height: var(--heading-1-line-height);
+  color: var(--secondary);
+}
+
+.h1__sqlito {
+  font-size: var(--heading-1-font-size);
+  font-style: var(--heading-1-font-style);
+  font-weight: var(--heading-1-font-weight);
+  letter-spacing: var(--heading-1-letter-spacing);
+  line-height: var(--heading-1-line-height);
+  color: var(--color-primary);
+}
+
+.h2__sqlito {
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-2-font-size);
+  font-style: var(--heading-2-font-style);
+  font-weight: var(--heading-2-font-weight);
+  letter-spacing: var(--heading-2-letter-spacing);
+  line-height: var(--heading-2-line-height);
+  color: var(--color-primary);
+}
+
+.font-heading-h1 {
+  font-family: var(--heading-h1-font-family);
+  font-size: var(--heading-h1-font-size);
+  font-style: var(--heading-h1-font-style);
+  font-weight: var(--heading-h1-font-weight);
+  letter-spacing: var(--heading-h1-letter-spacing);
+  line-height: var(--heading-h1-line-height);
+}
+
+.font-heading-h2 {
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-2-font-size);
+  font-style: var(--heading-2-font-style);
+  font-weight: var(--heading-2-font-weight);
+  letter-spacing: var(--heading-2-letter-spacing);
+  line-height: var(--heading-2-line-height);
+}
+
+.font-textopeque {
+  font-family: var(--texto-peque-o-web-font-family);
+  font-size: var(--texto-peque-o-web-font-size);
+  font-style: var(--texto-peque-o-web-font-style);
+  font-weight: var(--texto-peque-o-web-font-weight);
+  letter-spacing: var(--texto-peque-o-web-letter-spacing);
+  line-height: var(--texto-peque-o-web-line-height);
+  color: var(--secondary);
+}
+
+.body-text {
+  line-height: var(--text-normal-line-height);
+  color: var(--color-grey-3);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.primary-bg {
+  background-color: var(--color-primary);
+}
+
+.secondary-bg {
+  background-color: var(--secondary);
+}
